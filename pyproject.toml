@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-polars-vector-rag-engine"
+version = "1.0.0"
+authors = [{ name = "Felipe Madison", email = "160553421+FelipeMadson@users.noreply.github.com" }]
+description = "High-performance vector retrieval and columnar data analysis engine combining Polars zero-copy execution with cosine similarity ranking in Python"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "polars>=0.20.0",
+    "numpy>=1.26.0",
+    "pydantic>=2.7.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0"
+]
